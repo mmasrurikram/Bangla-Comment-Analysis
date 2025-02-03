@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Credit Card Default Prediction</title>		
+<style>
+
+h1 {
+  text-align: center;
+  margin:150px auto;
+  padding: 12px 8px;
+}
+
+h2 {
+  color: DarkSlateGrey;
+  margin:20px auto;
+}
+
+body{
+	background-color:PaleTurquoise;
+}
+
+</style>
+			
+	</head>
+
+    <body>
+
+		<!-- Result -->
+		<h2>Result</h2>
+		<div class="results">
+			{% if prediction==1 %}
+				<h1 style="background-color:FireBrick;"> Prediction: Default</h1>
+			{% elif prediction==0 %}
+				<h1 style="background-color:MediumSeaGreen;">Prediction: Not Default</h1>
+			{% endif %}	
+		</div>
+
+
+	</body>
+</html>

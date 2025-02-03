@@ -1,0 +1,15 @@
+pandas
+<<<<<<< HEAD
+numpy
+matplotlib
+seaborn
+scikit-learn
+imblearn
+flask
+=======
+matplotlib
+seaborn
+nltk
+scikit-learn
+Flask
+>>>>>>> 119ff98e (Initial commit - Credit Card Default Prediction)

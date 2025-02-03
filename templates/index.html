@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<<<<<<< HEAD
+<html >
+<head>
+    <title>Credit Card Default Prediction</title>
+
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+input[type=submit] {
+  width: 30%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+  
+}
+
+
+div {
+
+  border-radius: 5px;
+  background-color: WhiteSmoke;
+  padding-top: 150px;
+  padding-bottom: 20px;
+  text-align: center;
+  
+}
+
+h1 {
+  
+  text-align: center;
+  background-color:Teal;
+  width:60%;
+  margin: 0px auto;
+  display: block;
+
+}
+h2 {
+  
+  color: WhiteSmoke;
+}
+
+
+input[type=text] {
+  width: 50%;
+  padding: 8px 5px;
+  margin: 10px 0;
+  box-sizing: border-box;
+
+
+}
+
+body{
+  max-height: 100px;
+  background-color: Teal;
+  background-size: cover;
+  margin-bottom: 0 !important;
+}
+select{
+     width:10%;
+
+  }
+
+</style>
+
+
+
+<body> 
+  <h2>Machine Learning Application</h2>
+
+ <div>
+    <h1>Credit Card Default Prediction</h1>
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+
+    <input type="text" name="LIMIT_BAL" placeholder="LIMIT_BAL" required="required" />
+    <br>  
+    <label for="PAY_0">PAY_0:</label>
+    <select name="PAY_0" id="PAY_0">
+        <option value="-1">pay duly</option>
+        <option value="1">payment delay for one month</option>
+        <option value="2">payment delay for two months</option>
+        <option value="8">payment delay for eight months</option>
+        <option value="9">payment delay for nine months and above</option>
+    </select>
+
+    <label for="PAY_2">PAY_2:</label>
+    <select name="PAY_2" id="PAY_2">
+        <option value="-1">pay duly</option>
+        <option value="1">payment delay for one month</option>
+        <option value="2">payment delay for two months</option>
+        <option value="8">payment delay for eight months</option>
+        <option value="9">payment delay for nine months and above</option>
+    </select>
+
+    <label for="PAY_3">PAY_3:</label>
+    <select name="PAY_3" id="PAY_3">
+        <option value="-1">pay duly</option>
+        <option value="1">payment delay for one month</option>
+        <option value="2">payment delay for two months</option>
+        <option value="8">payment delay for eight months</option>
+        <option value="9">payment delay for nine months and above</option>
+    </select>
+<br>
+    <label for="PAY_4">PAY_4:</label>
+    <select name="PAY_4" id="PAY_4">
+        <option value="-1">pay duly</option>
+        <option value="1">payment delay for one month</option>
+        <option value="2">payment delay for two months</option>
+        <option value="8">payment delay for eight months</option>
+        <option value="9">payment delay for nine months and above</option>
+    </select>
+
+    <label for="PAY_5">PAY_5:</label>
+    <select name="PAY_5" id="PAY_5">
+    <option value="-1">pay duly</option>
+    <option value="1">payment delay for one month</option>
+    <option value="2">payment delay for two months</option>
+    <option value="8">payment delay for eight months</option>
+    <option value="9">payment delay for nine months and above</option>
+
+    </select>
+    <label for="PAY_6">PAY_6:</label>
+    <select name="PAY_6" id="PAY_6">
+        <option value="-1">pay duly</option>
+        <option value="1">payment delay for one month</option>
+        <option value="2">payment delay for two months</option>
+        <option value="8">payment delay for eight months</option>
+        <option value="9">payment delay for nine months and above</option>
+    </select>
+
+    <br>
+    <input type="text" name="PAY_AMT1" placeholder="PAY_AMT1" required="required" >
+    <input type="text" name="PAY_AMT2" placeholder="PAY_AMT2" required="required" >
+    <input type="text" name="PAY_AMT3" placeholder="PAY_AMT3" required="required" >
+    <input type="text" name="PAY_AMT6" placeholder="PAY_AMT6" required="required" >
+
+    <br>
+    <input type="submit" value="Submit">
+    </form>
+ </div>
+
+ <script>
+  if(document.querySelector(".result").innerHTML==" "){
+    document.querySelector(".result").css.display = "none";
+  }
+ </script>
+=======
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Sentiment Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 500px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+        }
+        p {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comment Sentiment Analysis</h1>
+    <form method="POST">
+        <textarea name="comment" placeholder="Enter your comment here..."></textarea><br>
+        <button type="submit">Analyze Sentiment</button>
+    </form>
+
+    {% if comment %}
+    <p><strong>Comment:</strong> {{ comment }}</p>
+    {% endif %}
+
+    {% if prediction == 1 %}
+    <p><strong>Sentiment:</strong> Positive</p>
+    {% elif prediction == 0 %}
+    <p><strong>Sentiment:</strong> Negative</p>
+    {% endif %}
+>>>>>>> 119ff98e (Initial commit - Credit Card Default Prediction)
+</body>
+</html>
